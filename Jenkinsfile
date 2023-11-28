@@ -4,7 +4,7 @@ pipeline {
         timeout(time: 1, unit: 'HOURS') 
     }
       triggers {
-         cron('* * * * *')
+         cron('5 * * * *')
       }
     environment { 
         USER = 'Anudeep'
