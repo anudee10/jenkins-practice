@@ -3,9 +3,9 @@ pipeline {
     options {
         timeout(time: 1, unit: 'HOURS') 
     }
-    // triggers {
-    //     cron('* * * * *')
-    // }
+      triggers {
+         cron('* * * * *')
+      }
     environment { 
         USER = 'Anudeep'
     }
@@ -36,7 +36,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                //error 'this is failed'
+                error 'this is failed'
             }
         }
 
